@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TreeViewCSharp
 {
-    public partial class Form1 : Form
+    public partial class FormTask : Form
     {
-        public Form1()
+        public FormTask()
         {
             InitializeComponent();
+        }
+
+        private void TaskForm_Load(object sender, EventArgs e)
+        {
+            cbxStatus.DataSource = Enum.GetValues(typeof(Data.enumStatus));
         }
     }
 }
