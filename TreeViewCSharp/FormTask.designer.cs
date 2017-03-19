@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.grpTask = new System.Windows.Forms.GroupBox();
             this.cbxStatus = new System.Windows.Forms.ComboBox();
-            this.enumStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblStatus = new System.Windows.Forms.Label();
             this.cbxAssign = new System.Windows.Forms.ComboBox();
             this.lblAssignTo = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.lblDescription = new System.Windows.Forms.Label();
             this.txtTask = new System.Windows.Forms.TextBox();
             this.lblTask = new System.Windows.Forms.Label();
+            this.enumStatusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grpTask.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enumStatusBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +62,12 @@
             // 
             // cbxStatus
             // 
+            this.cbxStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxStatus.FormattingEnabled = true;
             this.cbxStatus.Location = new System.Drawing.Point(84, 128);
             this.cbxStatus.Name = "cbxStatus";
             this.cbxStatus.Size = new System.Drawing.Size(121, 21);
             this.cbxStatus.TabIndex = 19;
-            
             // 
             // lblStatus
             // 
@@ -80,6 +80,7 @@
             // 
             // cbxAssign
             // 
+            this.cbxAssign.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxAssign.FormattingEnabled = true;
             this.cbxAssign.Location = new System.Drawing.Point(84, 93);
             this.cbxAssign.Name = "cbxAssign";
@@ -128,14 +129,14 @@
             this.lblTask.TabIndex = 13;
             this.lblTask.Text = "Tâche : ";
             // 
-            // TaskForm
+            // FormTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 191);
-            this.ControlBox = false;
             this.Controls.Add(this.grpTask);
-            this.Name = "TaskForm";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "FormTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "TaskForm";
             this.Load += new System.EventHandler(this.TaskForm_Load);
